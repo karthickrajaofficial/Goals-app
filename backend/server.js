@@ -15,6 +15,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
+ app.get('/', (req, res) =>{
+   res.setHeader("Access-Control-Allow-Credentials","true");
+   res.send("API is running..");
+ })
 
 app.use('/api/goals', require('./routes/goalRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
