@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "node server.js",
     "client": "npm start --prefix frontend"
   },
   "author": "",
